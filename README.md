@@ -1,6 +1,6 @@
 This repository includes the mini-project: API Integration in Module 10 of the Software Engineering Core. GitHub repository link and documentation below:
 
-GitHub Repository: ???
+GitHub Repository: https://github.com/ChristianCurtis06/API-integration
 
 Documentation:
 
