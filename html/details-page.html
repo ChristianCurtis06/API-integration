@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<title>Catch 'Em Hub - Details</title>
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="../scripts/display-script.js" defer></script>
+</head>
+<body>
+    <nav class="navbar bg-danger navbar-expand-lg" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white" href="home-page.html">Catch 'Em Hub</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home-page.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="search-page.html">Search</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container p-0">
+        <a href="search-page.html" class="btn btn-outline-danger mt-4">Return to Search</a>
+        
+        <div id="pokémonInfo" class="row my-4 border rounded">
+            <div class="col-md-6 bg-dark rounded-start p-0">
+                <img class="w-100 h-auto" id="pokémon-image">
+            </div>
+
+            <div class="col-md-6 bg-white rounded-end p-5 d-flex flex-column justify-content-center">
+                <h2 class="mb-1 fs-2 text-secondary" id="pokémon-id"></h2>
+                <h1 class="mb-3 display-3 fw-semibold text-danger text-capitalize" id="pokémon-name"></h1>
+                <h2 class="mb-3 fs-5" id="pokémon-size"></h2>
+                <h2 class="mb-3 fs-4" id="pokémon-xp"></h2>
+                <h2 class="mb-2 fs-4">Types:</h2>
+                <ul class="text-capitalize" id="pokémon-types"></ul>
+                <h2 class="mb-2 fs-4">Abilities:</h2>
+                <ul class="text-capitalize" id="pokémon-abilities"></ul>
+                <div>
+                    <h2 class="mb-2 fs-4">HP:</h2>
+                    <div class="mb-3 progress" style="height: 20px;" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger fw-bold" id="pokémon-hp"></div>
+                    </div>
+                    <h2 class="mb-2 fs-4">Attack:</h2>
+                    <div class="mb-3 progress" style="height: 20px;" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger fw-bold" id="pokémon-attack"></div>
+                    </div>
+                    <h2 class="mb-2 fs-4">Defense:</h2>
+                    <div class="mb-3 progress" style="height: 20px;" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger fw-bold" id="pokémon-defense"></div>
+                    </div>
+                    <h2 class="mb-2 fs-4">Special Attack:</h2>
+                    <div class="mb-3 progress" style="height: 20px;" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger fw-bold" id="pokémon-special-attack"></div>
+                    </div>
+                    <h2 class="mb-2 fs-4">Special Defense:</h2>
+                    <div class="mb-3 progress" style="height: 20px;" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger fw-bold" id="pokémon-special-defense"></div>
+                    </div>
+                    <h2 class="mb-2 fs-4">Speed:</h2>
+                    <div class="mb-3 progress" style="height: 20px;" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger fw-bold" id="pokémon-speed"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
